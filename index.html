@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do-List</title>
+    <link rel="icon" href="./images/todo-list_318-10185.jpg" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form class="todolist">
+      <h1 class="title">To Do List</h1>
+      <div class="box addItem">
+        <input
+          id="js-input"
+          class="listElement"
+          name="add-item"
+          placeholder="Add new"
+        />
+        <button id="js-add" class="button" for="add-item">Add</button>
+      </div>
+      <div class="box">
+        <div class="subtitle">Things to get done:</div>
+        <ul id="js-list-todo" class="list list-todo"></ul>
+      </div>
+      <div class="box">
+        <div class="subtitle">Already done:</div>
+        <ul id="js-list-done" class="list list--done"></ul>
+      </div>
+    </form>
+    <script src="./script.js"></script>
+  </body>
+</html>
